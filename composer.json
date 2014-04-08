@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 {
 	"name": "laravel/laravel",
 	"description": "The Laravel Framework.",
@@ -36,8 +36,7 @@
 	},
 	"minimum-stability": "stable"
 }
-||||||| merged common ancestors
-=======
+
 {
 	"name": "laravel/laravel",
 	"description": "The Laravel Framework.",
@@ -76,4 +75,3 @@
 	},
 	"minimum-stability": "stable"
 }
->>>>>>> b6368e955e847e1f2abb6a4f166673a25ae3f3e7
