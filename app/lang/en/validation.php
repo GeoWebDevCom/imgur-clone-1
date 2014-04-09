@@ -96,4 +96,3 @@ return array(
 	'attributes' => array(),
 
 );
->>>>>>> b6368e955e847e1f2abb6a4f166673a25ae3f3e7

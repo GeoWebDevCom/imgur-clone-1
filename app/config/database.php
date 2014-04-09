@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'ImgurClone',
+			'database'  => 'imgurclone',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',
@@ -122,4 +122,3 @@ return array(
 	),
 
 );
-

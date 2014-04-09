@@ -10,7 +10,7 @@
     @show
 </head>
 <body>
-    @yield('body')
+    @yield('content')
     
 </body>
 </html>

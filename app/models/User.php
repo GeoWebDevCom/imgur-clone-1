@@ -5,6 +5,9 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
+	protected $fillable = array('username', 'email', 'password');
+	protected $guarded = array('id');
+
 	/**
 	 * The database table used by the model.
 	 *
@@ -27,6 +30,31 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	public function getAuthIdentifier()
 	{
 		return $this->getKey();
+	}
+
+	public function getImages()
+	{
+
+		
+		$path = 'uploads/'. Auth::user()->username . '/';
+		//$path = base_path() . '//public/' .'uploads/'. $this->username;
+		$files = scandir($path);
+		$brand_images = array();
+//		foreach ($files as $key => $file) {
+//			if(File::is(array('jpeg', 'jpg', 'png', 'gif'), $path.DS.$file))
+//			{
+//				$brand_images[] = $files[$key];
+//			}
+//		}
+		
+	    foreach ($files as $file) 
+	    {
+	    	
+	    		//echo "File: $file <br>";	
+	    		echo $previewimage = '<img src='. $path . $file . '>';
+	    	  
+    	}
+	    
 	}
 
 	/**
@@ -62,4 +90,3 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	
 
 }
->>>>>>> b6368e955e847e1f2abb6a4f166673a25ae3f3e7
